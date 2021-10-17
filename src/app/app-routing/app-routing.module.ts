@@ -3,7 +3,7 @@ import {DropOnlyShipsComponent} from "../drop-only-ships/drop-only-ships.compone
 import {RouterModule, Routes} from "@angular/router";
 
 const routes: Routes = [
-  {path: '', component: DropOnlyShipsComponent},
+  {path: '', redirectTo: "drop-only-ships", pathMatch: "full"},
   {path: 'drop-only-ships', component: DropOnlyShipsComponent}
 ]
 
