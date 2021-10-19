@@ -1,0 +1,11 @@
+<div class="card h-100" *ngIf="shipByMap">
+  <div class="card-header">Map {{ shipByMap.map }}</div>
+  <div class="card-body">
+    <div class="d-flex flex-wrap justify-content-center">
+      <figure *ngFor="let ship of shipByMap.ships" class="ship-pic">
+        <img [src]="'assets/image/'+ship.img" class="img-thumbnail mr-1" [alt]="ship.name"/>
+        <figcaption class="text-wrap text-center">{{ship.name}}</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>

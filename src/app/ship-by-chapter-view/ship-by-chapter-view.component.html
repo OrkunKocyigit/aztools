@@ -1,0 +1,5 @@
+<accordion-group *ngIf="shipByChapter" [heading]="'Chapter ' + shipByChapter.chapter" class="mb-2" [isOpen]="true">
+  <div class="row row-cols-lg-2 row-cols-md-1">
+      <app-ship-by-map *ngFor="let shipByMap of shipByChapter.maps" [shipByMap]="shipByMap" class="col mb-3"></app-ship-by-map>
+  </div>
+</accordion-group>

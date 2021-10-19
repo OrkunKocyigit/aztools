@@ -1,1 +1,8 @@
-work
+<div class="row">
+  <div class="col">
+    <accordion [isAnimated]="true" class="flex-fill">
+      <app-ship-by-chapter-view *ngFor="let shipByChapter of shipsByChapter"
+                                [shipByChapter]="shipByChapter"></app-ship-by-chapter-view>
+    </accordion>
+  </div>
+</div>
